@@ -2,24 +2,24 @@ import { Router } from 'express';
 
 const userRouter = Router()
 
-userRouter.get('./getAllUsers', (req, res) => {
+userRouter.get('./', (req, res) => {
     res.send(
         {
-            title: 'Get all users'
+            title: 'Fetch all users'
         }
     );
 });
 
-userRouter.get('./getUserById', (req, res) => {
+userRouter.get('./:id', (req, res) => {
     res.send(
         {
-            title: 'Get user'
+            title: 'Fetch user'
         }
     );
 });
 
 
-userRouter.update('./editUserById', (req, res) => {
+userRouter.update('./:id', (req, res) => {
     res.send(
         {
             title: 'Update User'
@@ -28,7 +28,7 @@ userRouter.update('./editUserById', (req, res) => {
 });
 
 
-userRouter.update('./softDelete', (req, res) => {
+userRouter.update('./:id', (req, res) => {
     res.send(
         {
             title: 'Deleted'
