@@ -1,4 +1,4 @@
-import Navbar from '@components/LandingPage/Navbar.jsx'
+import Navbar from '@/landingPage/Navbar.jsx'
 
 export default function LandingPage() {
   return (
