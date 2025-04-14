@@ -1,0 +1,11 @@
+node_modules
+package-lock.json
+.client/package-lock.json
+client/public/uploads/images/
+server/src/uploads/images/
+*/dist
+
+
+.env
+
+.DS_Store
