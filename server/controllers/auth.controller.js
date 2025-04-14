@@ -41,7 +41,7 @@ export const signup = async (req, res) => {
         });
 
     } catch (error) {
-        console.error(error); // Added logging for better debugging
+        console.error(error); 
         res.status(500).json({
             message: `Server error while registering: ${error.message}` 
         });
@@ -77,7 +77,7 @@ export const signin = async (req, res) => {
             },
         });
     } catch (err) {
-        console.error(err); // Added logging for better debugging
+        console.error(err); 
         res.status(500).json({ message: 'Server error while logging in.' });
     }
 };
@@ -91,7 +91,7 @@ export const getProfile = async (req, res) => {
 
         res.json(user);
     } catch (err) {
-        console.error(err); // Added logging for better debugging
+        console.error(err); 
         res.status(500).json({ message: 'Server error fetching profile.' });
     }
 };
