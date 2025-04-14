@@ -25,7 +25,7 @@ npm install
 cd client 
 npm install
 ```
-####Configure Environment Variables
+#### Configure Environment Variables
 Create a .env file in the project root directory and add the following variables. Modify the values as needed.
 
 ```bash
