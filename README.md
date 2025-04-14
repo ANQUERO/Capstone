@@ -9,4 +9,20 @@ Follow these instructions to set up the project locally:
 ### 📦 Clone the Repository
 
 ```bash
-git clone <name-of-the-repo>
+git clone <https://github.com/ANQUERO/Capstone.git>
+```
+### 📁 Install Dependencies
+
+#### For the server
+```bash
+cd server 
+npm install
+```
+
+
+#### For the client
+```bash
+cd client 
+npm install
+```
+
