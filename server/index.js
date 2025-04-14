@@ -3,6 +3,8 @@ import cors from 'cors'
 import dotenv from 'dotenv'
 import connectDB from './db/connect.db.js';
 import mongoose from 'mongoose';
+import authRoutes from './routes/auth.route.js'
+import cookieParser from 'cookie-parser';
 
 
 console.log("Starting server initialization...");
@@ -16,6 +18,10 @@ const app = express()
 // Middlewares
 app.use(cors())
 app.use(express.json())
+app.use(cookieParser());
+
+//Api routes
+app.use('/api/auth', authRoutes);
 
 
 
