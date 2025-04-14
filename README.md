@@ -25,4 +25,14 @@ npm install
 cd client 
 npm install
 ```
+##Configure Environment Variables
+###Create a .env file in the project root directory and add the following variables. Modify the values as needed.
+
+```bash
+NODE_ENV=development
+PORT=...
+JWT_SECRET=...
+MONGO_DB_URI=...
+```
+
 
