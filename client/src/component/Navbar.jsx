@@ -4,6 +4,14 @@ import { Menu, X } from 'lucide-react'
 // eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from 'framer-motion'
 
+const links = [
+  { href: '#about', text: 'About' },
+  { href: '#officials', text: 'Officials' },
+  { href: '#discover', text: 'Discover' },
+  { href: '#location', text: 'Location' },
+  { href: '#signup', text: 'Sign Up', isPrimary: true },
+]
+
 const NavLinks = ({ links, onClick }) => (
   <ul className="flex flex-col md:flex-row items-center md:gap-x-12 gap-y-4">
     {links.map((link, index) => (
@@ -26,14 +34,6 @@ const NavLinks = ({ links, onClick }) => (
     ))}
   </ul>
 )
-
-const links = [
-  { href: '#about', text: 'About' },
-  { href: '#officials', text: 'Officials' },
-  { href: '#discover', text: 'Discover' },
-  { href: '#location', text: 'Location' },
-  { href: '#signup', text: 'Sign Up', isPrimary: true },
-]
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)

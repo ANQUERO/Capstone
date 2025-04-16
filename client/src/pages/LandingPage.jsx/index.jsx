@@ -1,11 +1,10 @@
 import React from 'react'
 import Navbar from '@/component/Navbar.jsx'
-
 import Hero from './sections/hero.jsx'
 
 const LandingPage = () => {
   return (
-    <div>
+    <div className="bg-[#31578B]">
       <Navbar />
       <Hero />
 
