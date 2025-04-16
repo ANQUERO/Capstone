@@ -46,7 +46,7 @@ const Navbar = () => {
       className="sticky p-4 w-full top-0 z-50 bg-[#31578B]"
     >
       <nav className="w-full max-w-7xl mx-auto flex items-center justify-between">
-        <div className="text-white text-2xl font-bold">SKC</div>
+        <div id='hero' className="text-white text-2xl font-bold">SKC</div>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex">
