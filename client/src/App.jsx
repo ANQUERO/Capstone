@@ -1,11 +1,12 @@
+import LandingPage from "./pages/LandingPage.jsx/index.jsx"
 
 function App() {
 
   return (
-    <>
-    <h1 className="text-center text-black text-9xl">Hello World</h1>
+    <main>
+    <LandingPage/>
     
-    </>
+    </main>
   )
 }
 
