@@ -1,12 +1,13 @@
 import React from 'react'
-import { Button } from '@/components/ui/button.jsx'
+import Navbar from '@/component/Navbar.jsx'
+
 
 const Hero = () => {
   return (
     <section id='hero' className=''>
       
       <main className=''>
-        <Button>gelli</Button>
+        <Navbar/>
 
 
       </main>
