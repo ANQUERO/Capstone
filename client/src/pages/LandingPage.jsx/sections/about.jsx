@@ -103,7 +103,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="w-full py-16 px-4 md:px-8 lg:px-16 relative overflow-hidden"
+      className="w-full h-full py-16 px-4 md:px-8 lg:px-16 relative overflow-hidden"
     >
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-8">
