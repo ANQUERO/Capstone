@@ -67,7 +67,8 @@ const Background = () => (
 )
 
 const Hero = () => (
-  <main className='relative max-w-11/12 h-screen mx-auto overflow-hidden rounded-xl mt-10 '>
+  <main id='hero' className='relative max-w-11/12 h-screen mx-auto overflow-hidden rounded-xl mt-10 '>
+
     <Background />
 
     <div className="relative z-10 flex flex-col justify-center items-start h-full px-4 sm:px-8 md:px-12 lg:px-20 text-white space-y-4">
