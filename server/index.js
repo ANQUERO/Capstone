@@ -3,8 +3,12 @@ import cors from 'cors'
 import dotenv from 'dotenv'
 import connectDB from './db/connect.db.js';
 import mongoose from 'mongoose';
-import authRoutes from './routes/auth.route.js'
 import cookieParser from 'cookie-parser';
+
+import authRoutes from './routes/auth.route.js'
+import adminRoutes from './routes/admin.routes.js'
+import postRoutes from './routes/post.route.js'
+
 
 
 console.log("Starting server initialization...");
@@ -22,6 +26,8 @@ app.use(cookieParser());
 
 //Api routes
 app.use('/api/auth', authRoutes);
+app.use('/api/admin', adminRoutes);
+app.use('/api/post', postRoutes);
 
 
 
