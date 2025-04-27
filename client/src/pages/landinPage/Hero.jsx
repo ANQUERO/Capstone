@@ -13,6 +13,18 @@ const Description = ({ paragraph }) => (
     <p className={style.paragraphs}>{paragraph}</p>
 );
 
+const Button1 = ({ text }) => (
+    <button className={style.button1}>
+        <span className={style.buttonBlock}>{text}</span>
+    </button>
+)
+
+const Button2 = ({ text }) => (
+    <button className={style.button2}>
+        <span className={style.buttonBlock}>{text}</span>
+    </button>
+)
+
 
 
 const BackGround = () => (
@@ -33,24 +45,27 @@ const BackGround = () => (
 const Hero = () => {
     return (
         <main id='home' className={style.main}>
-            <BackGround/>
+            <BackGround />
             <div className={style.foreground}>
 
                 <Tagline
-                text1="Empowered Youth,"
-                text2="Empowered Democracy."
+                    text1="Empowered Youth,"
+                    text2="Empowered Democracy."
                 />
 
                 <Description
-                paragraph="Know your rights, demand transparent leadership."
+                    paragraph="Know your rights, demand transparent leadership."
                 />
 
 
                 <div className={style.taglineButtons}>
 
-                    
-
-
+                    <Button1
+                        text="Login"
+                    />
+                    <Button2
+                        text="Location"
+                    />
                 </div>
             </div>
         </main>

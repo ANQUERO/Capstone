@@ -1,3 +1,4 @@
+//Main Hero Positioning
 .main {
     position: relative;
     max-width: 91.66;
@@ -34,7 +35,6 @@
         }
     }
 
-
     .taglineButtons {
         display: flex;
         flex-direction: column;
@@ -51,6 +51,7 @@
 }
 
 
+//Tagline Component css
 .title {
     font-size: 5rem;
     font-weight: 700;
@@ -82,6 +83,7 @@
 
 
 
+//Parachraph Component css
 .paragraphs {
     max-width: 40rem;
     margin-bottom: 1.5rem;
@@ -98,6 +100,78 @@
     }
 }
 
+
+ //Tagline Buttons css
+ .button1 {
+    background-color: #B8336A;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none; 
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+        background-color: white;
+        color: #B8336A;
+    }
+
+    /* Make the button smaller on smaller screens */
+    @media (max-width: 768px) {
+        font-size: medium;
+        padding: 0.8rem 2rem;
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    @media (max-width: 480px) {
+        font-size: small;
+        padding: 0.5rem 1.5rem;
+        width: 100%; /* Full width on very small screens */
+    }
+}
+
+.button2 {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none; 
+    border: none;
+
+    &:hover {
+        background-color: #B8336A;
+        color: white;
+    }
+
+    /* Make the button smaller on smaller screens */
+    @media (max-width: 768px) {
+        font-size: medium;
+        padding: 0.8rem 2rem;
+    }
+
+    @media (max-width: 480px) {
+        font-size: small;
+        padding: 0.5rem 1.5rem;
+    }
+}
+
+
+
+
+//Hero Background css
 .background {
     position: absolute;
     top: 0;
