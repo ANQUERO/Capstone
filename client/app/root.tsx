@@ -3,6 +3,7 @@ import {
   Links,
   Meta,
   Outlet,
+  NavLink,
   Scripts,
   ScrollRestoration,
 } from "react-router";
@@ -32,7 +33,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="min-h-screen bg-gray-100">
         {children}
         <ScrollRestoration />
         <Scripts />
@@ -42,7 +43,24 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  return (
+    <>
+      <nav className="bg-white shadow p-4">
+        <div className="containter mx-auto flex items-center justify-between">
+          <NavLink to="/" className="text-2xl font-bold text-indigo-400 ">Logo</NavLink>
+          <div className="space-x-4">
+            <NavLink to="/" className="text-black font-semibold text-xl hover:underline">Items</NavLink>
+            <NavLink to="/new" className="text-black font-semibold text-xl hover:underline">New item</NavLink>
+            <NavLink to="/cart" className="text-black font-semibold text-xl hover:underline">Cart</NavLink>
+          </div>
+        </div>
+      </nav>
+      <main className="container mx-auto p-4">
+        <Outlet />
+      </main>
+
+    </>
+  )
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
