@@ -7,4 +7,7 @@ export default defineConfig({
   plugins: [react(),
     tsconfigPaths()
   ],
+  optimizeDeps: {
+    include: ['@shoelace-style/shoelace'],
+  }
 })

@@ -25,8 +25,6 @@ const Button2 = ({ text }) => (
     </button>
 )
 
-
-
 const BackGround = () => (
     <div className={style.background}>
         <img
