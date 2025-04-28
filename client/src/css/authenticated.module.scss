@@ -1,27 +1,91 @@
 .mainContainer {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  overflow: hidden;
-  background-color: #f9fafb;
-
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    overflow: hidden;
+    background-color: #f9fafb;
+  
     @media (max-width: 1024px) {
-        flex-direction: column; 
+      flex-direction: column;
     }
-}
+  }
 
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 40;
+  
+    &.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+  
+/* Sidebar */
 .menuContainer {
     width: 250px;
     background-color: #31578B;
     padding: 2rem 1.25rem;
-    display: block; 
+    height: 100vh;
+    position: relative;
+    z-index: 100;
     overflow: hidden;
-
+  
     @media (max-width: 1024px) {
-        width: 100%; 
-        display: none;
+      position: fixed;
+      top: 0;
+      left: -300px;
+      bottom: 0;
+      transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      display: block;
+  
+      &.open {
+        left: 0;
+      }
     }
-}
+  }
+  
+  .closeButtonContainer {
+    display: none;
+  
+    @media (max-width: 1024px) {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  .menuButtonContainer {
+    display: none;
+  
+    @media (max-width: 1024px) {
+      display: block;
+    }
+  }
+  
+  .topMenuButton {
+    display: none;
+  
+    @media (max-width: 1024px) {
+      display: flex;
+      justify-content: flex-end;
+      padding: 1rem 1.5rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 60;
+    }
+  }
+
+  
 
 .contentContainer {
     flex: 1;
@@ -80,4 +144,46 @@
     text-align: center;
     font-size: 1.2rem;
     font-weight: 500;
+}
+
+
+
+//Hamburger Menu
+.hamburger{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0; /* Positions it to the left */
+    color: #31578B;
+    display: none;
+
+
+}
+
+//Admin Dashboard Title
+.titleName{
+    padding: 1rem 2rem;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.titleSpan{
+    color: #31578B;
+}
+
+.titleDescription{
+    color: #7C7C7C;
+    font-size: 1.5rem;
+}
+
+//Admin Logo
+.adminLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: white;
 }
