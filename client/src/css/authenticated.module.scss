@@ -167,6 +167,10 @@
 .titleName{
     padding: 1rem 2rem;
 
+    @media (max-width: 480px) {
+      padding: .5rem 1rem;
+    }
+
 }
 
 .title{
