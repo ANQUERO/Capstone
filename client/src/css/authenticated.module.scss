@@ -149,23 +149,20 @@
     font-weight: 500;
 }
 
-
-
 //Hamburger Menu
 .hamburger{
     position: absolute;
     top: 0;
     bottom: 0;
-    right: 0; /* Positions it to the left */
+    right: 0;
     color: #31578B;
     display: none;
-
-
 }
 
 //Admin Dashboard Title
 .titleName{
     padding: 1rem 2rem;
+    margin-top: 2rem;
 
     @media (max-width: 480px) {
       padding: .5rem 1rem;
