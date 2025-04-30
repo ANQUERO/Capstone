@@ -1,10 +1,10 @@
 import React from 'react';
-import Authenticated from '@pages/Authenticated/index.jsx';
+import NotFound from '@pages/NotFound/index.jsx'
 
 function App() {
   return (
     <>
-      <Authenticated />
+    <NotFound/>
     </>
   );
 }

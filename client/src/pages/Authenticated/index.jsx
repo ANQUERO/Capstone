@@ -46,6 +46,12 @@ const Content = ({ children }) => (
 
 const skAdminMenu = [
   {
+    title: "Create Post",
+    path: "/",
+    visible: true,
+    icon: ""
+  },
+  {
     title: "Dashboard",
     path: "/",
     visible: true,
@@ -90,6 +96,12 @@ const skAdminMenu = [
 
 const skYouthMenu = [
   {
+    title: "Create Post",
+    path: "/",
+    visible: true,
+    icon: ""
+  },
+  {
     title: "Profile",
     path: "/",
     visible: true,
@@ -112,6 +124,15 @@ const skYouthMenu = [
 const menus = [
   ...(skAdminMenu ? skAdminMenu : []),
   ...(skYouthMenu ? skYouthMenu : []),
+]
+
+const menusTop = [
+    {
+      title: "Create Post",
+      path: "/",
+      visible: true,
+      icon: ""
+    }
 ]
 
 const menusBottom = [
