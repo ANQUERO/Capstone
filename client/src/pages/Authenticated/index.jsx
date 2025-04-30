@@ -112,11 +112,8 @@ const Authenticated = () => {
         </TopContainer>
 
         <Content>
-          <div className={style.dashboardCards}>
-            <div className={style.card}>Total Users: 150</div>
-            <div className={style.card}>Active Sessions: 45</div>
-            <div className={style.card}>Pending Requests: 5</div>
-          </div>
+          
+          
         </Content>
 
       </ContentContainer>
